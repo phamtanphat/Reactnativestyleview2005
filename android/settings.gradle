@@ -1,0 +1,3 @@
+rootProject.name = 'styleview'
+
+include ':app'
