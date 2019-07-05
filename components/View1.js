@@ -1,14 +1,13 @@
 import React, { PureComponent } from 'react'
 import { Text, View , StyleSheet} from 'react-native'
 import Button from './Button';
+import Flexbox from './Flexbox';
 
 export default class View1 extends PureComponent {
     render() {
         return (
             <View>
-                <Button 
-                    style={{backgroundColor : "black" ,  borderWidth : 1 , borderColor : "yellow"}}
-                    onPress={() => alert("Day la button")}/>
+                <Flexbox />
             </View>
         )
     }

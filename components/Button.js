@@ -5,10 +5,9 @@ export default class Button extends PureComponent {
     render() {
         return (
             <TouchableOpacity 
-                style={{...this.props.style , backgroundColor : "orange"}}
-                onPress={this.props.onPress}>
+                style={{backgroundColor : "#607CB7" , marginHorizontal : 30 , borderRadius : 2 , marginTop : 200}}>
                 <View>
-                    <Text style={{color : "red" , fontSize : 20 }}>Button</Text>
+                    <Text style={{color : "white" , fontSize : 20 }}>Login in facebook</Text>
                 </View>
            </TouchableOpacity>
         )
