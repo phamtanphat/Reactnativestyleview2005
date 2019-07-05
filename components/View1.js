@@ -6,9 +6,10 @@ import Flexbox from './Flexbox';
 export default class View1 extends PureComponent {
     render() {
         return (
-            <View>
-                <Flexbox />
-            </View>
+            <View style={{flex : 1}}>
+                <Flexbox /> 
+            </View>         
+            
         )
     }
 }
