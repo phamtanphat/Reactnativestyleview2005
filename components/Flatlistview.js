@@ -8,7 +8,7 @@ const words = [
     {id : "a4" , en : "Four" , vn : "Bốn" , isMemorized : true},
 ]
 export default class Flatlistview extends Component {
-    _renderFlatlist(item){
+    _renderFlatlist = (item) => {
         return (
             <Text style={{fontSize : 30 , color : item.isMemorized ? "green" : "red"}}>{item.en}</Text>
         )
@@ -19,7 +19,7 @@ export default class Flatlistview extends Component {
                 <FlatList
                     keyExtractor={item => item.id}
                     data={words}
-                    renderItem={({item}) => this._renderFlatlist(item)}
+                    renderItem={({item , index}) => this._renderFlatlist(item)}
                     />
             </View>
         )
