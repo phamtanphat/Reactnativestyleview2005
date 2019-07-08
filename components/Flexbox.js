@@ -4,12 +4,14 @@ import { Text, View } from 'react-native'
 export default class Flexbox extends PureComponent {
     render() {
         return (
-            <View style={{flex : 1 ,flexDirection : "row" }}>
-                <View style={{ backgroundColor : "blue" , justifyContent : "flex-end" }}>
-                    <Text style={{fontSize : 20,  color : "red" , backgroundColor : "yellow"}}>View1</Text>
+            <View style={{flex : 1 ,flexDirection : "column" }}>
+                {/* Group 1 :  1 3 4*/}
+                <View style={{flex : 0.5 , backgroundColor : "red"}}>  
+                    
                 </View>
-                <View style={{ }}>
-                    <Text style={{fontSize : 20,  color : "red" , backgroundColor : "yellow"}}>View2</Text>
+                {/* Group 2 :  2 5 6 7 8 9*/}
+                <View style={{flex : 0.5 , backgroundColor : "yellow"}}>  
+                    
                 </View>
             </View>
         )
