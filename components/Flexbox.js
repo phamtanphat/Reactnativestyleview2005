@@ -23,8 +23,24 @@ export default class Flexbox extends PureComponent {
 
                 </View>
                 {/* Group 2 :  2 5 6 7 8 9*/}
-                <View style={{flex : 0.5 , backgroundColor : "yellow"}}>  
-                    
+                <View style={{flex : 0.5 , backgroundColor : "yellow" , flexDirection : "row"}}>  
+                    {/* Group 5 :  2 */}
+                    <View style={{flex : 2 , backgroundColor : "chartreuse" , justifyContent : "center" , alignItems : "center"}}>
+                        <Text style={{fontSize :  30}}>2</Text>
+                    </View>
+                    {/* Group 6 :  5 6 */}
+                    <View style={{flex : 5 , backgroundColor : "white" ,flexDirection : "column" }}>
+                        <View style={{flex : 1 , justifyContent : "center" , alignItems : "center" , backgroundColor : "blue" }}>
+                            <Text style={{fontSize : 30}}>5</Text>
+                        </View>
+                        <View style={{flex : 1 , justifyContent : "center" , alignItems : "center" , backgroundColor : "darkblue" }}>
+                            <Text style={{fontSize : 30}}>6</Text>
+                        </View>
+                    </View>
+                    {/* Group 7 :  7 8 9 */}
+                    <View style={{flex : 3 , backgroundColor : "darkgoldenrod"}}>
+
+                    </View>
                 </View>
             </View>
         )
