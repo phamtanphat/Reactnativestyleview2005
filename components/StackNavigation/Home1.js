@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View , TouchableOpacity} from 'react-native'
 
 export default class Home1 extends PureComponent {
     static navigationOptions = {
@@ -14,8 +14,13 @@ export default class Home1 extends PureComponent {
     };
     render() {
         return (
-            <View>
-                <Text> textInComponent  1</Text>
+            <View style={{flex : 1 , justifyContent : "center" , alignItems : "center"}}>
+                <TouchableOpacity
+                    style={{backgroundColor : "gray" , padding : 10 , borderRadius : 5 }}
+                >
+                    <Text style={{color : "red" , fontSize : 20}}> Component1</Text>
+                </TouchableOpacity>
+                
             </View>
         )
     }
