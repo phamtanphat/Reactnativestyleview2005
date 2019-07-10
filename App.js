@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import { Text, View , StyleSheet} from 'react-native'
-import View1 from './components/View1';
-import Flatlistview from './components/Flatlistview';
+
+import Stack from './components/StackNavigation/stack';
 
 export default class App extends Component {
   render() {
     return (
       <View style={{flex : 1}}>
-        <Flatlistview/>
+        <Stack/>
       </View>
     );
   }
