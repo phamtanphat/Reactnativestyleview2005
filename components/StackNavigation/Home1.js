@@ -5,7 +5,7 @@ export default class Home1 extends PureComponent {
     render() {
         return (
             <View>
-                <Text> textInComponent </Text>
+                <Text> textInComponent  1</Text>
             </View>
         )
     }

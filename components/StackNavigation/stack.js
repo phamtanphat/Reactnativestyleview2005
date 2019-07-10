@@ -5,6 +5,6 @@ import Home2 from './Home2';
 const AppNavigator = createStackNavigator({
     Home1: {screen : Home1},
     Home2: {screen : Home2}
-},{headerMode : "none"});
+},{initialRouteName : "Home1"});
   
   export default createAppContainer(AppNavigator);
