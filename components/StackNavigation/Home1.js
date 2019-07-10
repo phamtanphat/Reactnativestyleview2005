@@ -16,7 +16,7 @@ export default class Home1 extends PureComponent {
         return (
             <View style={{flex : 1 , justifyContent : "center" , alignItems : "center"}}>
                 <TouchableOpacity
-                    onPress={() => this.props.navigation.navigate("Home2")}
+                    onPress={() => this.props.navigation.navigate("Home2" , {home2 : "Xin chào"})}
                     style={{backgroundColor : "gray" , padding : 10 , borderRadius : 5 }}
                 >
                     <Text style={{color : "red" , fontSize : 20}}> Component1</Text>
