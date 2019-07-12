@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { Text, View , SafeAreaView , TouchableOpacity , Image , StyleSheet} from 'react-native'
-// import ImagePicker from 'react-native-image-picker'
+import ImagePicker from 'react-native-image-picker'
 
 
 const options = {
@@ -18,7 +18,16 @@ export default class Cameragallery extends PureComponent {
         }
     }
     _takephoto(){
-        
+        ImagePicker.launchCamera(options, (response) => {
+            if (response.didCancel) {
+                this.setState({image : ""})
+            } else if (response.error) {
+                this.setState({image : ""})
+            } else {
+              const source = { uri: response.uri };
+              this.setState({image : source})
+            }
+        });
     }
     _imagegallery(){
         
@@ -29,6 +38,7 @@ export default class Cameragallery extends PureComponent {
                 <View style={styles.buttons}>
                     <View style={styles.containerCamera}>
                         <TouchableOpacity 
+                            onPress={() => this._takephoto()}
                             style={styles.touchableCamera}>
                             <View style={styles.containertextCamera}>
                                 
